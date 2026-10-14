@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "donuthud",
-  "version": "${version}",
+  "version": "1.0.0",
   "name": "Donut HUD",
   "description": "Client-side HUD that tracks your money and shards from the scoreboard, with session earnings per hour.",
   "authors": ["You"],
