@@ -1,8 +1,0 @@
-{
-  "key.donuthud.toggle": "Toggle stats HUD",
-  "key.donuthud.reset": "Reset session stats",
-  "key.donuthud.corner": "Move stats HUD to next corner",
-  "key.donuthud.auction": "Toggle auction panel",
-  "key.donuthud.auction_clear": "Clear auction bids",
-  "key.category.donuthud.main": "Donut HUD"
-}
