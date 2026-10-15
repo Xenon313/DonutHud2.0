@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "donuthud",
+  "version": "1.0.0",
+  "name": "Donut HUD",
+  "description": "Track your money and shards per hour, and run your own auctions with a live bid leaderboard. Move and resize everything in-game.",
+  "authors": ["Xenon313"],
+  "license": "MIT",
+  "icon": "assets/donuthud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.donuthud.DonutHudClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

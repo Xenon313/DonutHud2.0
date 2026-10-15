@@ -1,29 +1,14 @@
-# Donut HUD (Fabric, client-side)
+# Donut HUD (Fabric, client-side, Minecraft 1.21.11)
 
-Shows your Money and Shards (read from the sidebar scoreboard), session gains, and per-hour rates.
-Purely a display mod: it sends nothing to the server and automates nothing.
+## Keybinds (Options > Controls > Key Binds > Donut HUD)
+- H toggle stats panel
+- J reset session stats
+- L toggle auction panel
+- P new auction (pick item, min bid, timer)
+- U edit HUD (drag to move, drag the white corner square to resize)
+- O clear auctions
+- G debug: prints the scoreboard lines to chat
 
-## Keybinds (changeable in Controls > Donut HUD)
-- H: toggle HUD
-- J: reset session stats
-- K: move HUD to the next corner
-- L: toggle the auction leaderboard
-- O: clear auction bids
-
-## Build
-Requires JDK 21 and Gradle (or add the Gradle wrapper: `gradle wrapper`).
-    gradle build
-The jar appears in `build/libs/donut-hud-1.0.0.jar`. Drop it in `.minecraft/mods` with Fabric Loader + Fabric API.
-
-## If it shows "?"
-The mod matches scoreboard lines containing "Money" and "Shards". If the server words them differently,
-edit the two regex patterns at the top of `StatsTracker.java`.
-
-## Other Minecraft versions
-Change `minecraft_version`, `yarn_mappings`, `fabric_version` in `gradle.properties`
-(see https://fabricmc.net/develop). Small API renames may be needed on newer versions.
-
-## Auction leaderboard
-Watches chat for bid announcements and shows the top 5 bidders (highest bid each) on the right side of the screen.
-It also pops an action-bar alert whenever a new highest bid appears.
-If nothing shows up, edit the regex list at the top of `BidTracker.java` to match the server's real bid message wording.
+## Own icon / description
+- Icon: replace `src/main/resources/assets/donuthud/icon.png` with your own square PNG (128x128 or 512x512).
+- Description: edit the "description" line in `src/main/resources/fabric.mod.json`.
